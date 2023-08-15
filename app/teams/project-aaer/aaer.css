@@ -1,0 +1,73 @@
+#TeamAAER {
+    padding: 3rem;
+    background-size: cover;
+}
+
+#aaerHeading {
+    font-size: 5rem;
+    background: linear-gradient(90deg, darkgreen, green);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+#aaerSubHeading {
+    opacity: 0;
+    font-size: 1.75rem;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.page {
+    min-height: 60vh;
+    width: 100%;
+}
+
+.membersList {
+    max-width: 100vw;
+    width: 100%;
+    margin: 4rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.membersList div {
+    display: inline-block;
+    max-width: 13rem;
+    text-align: center;
+}
+
+.membersList div img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10%;
+}
+
+.membersList div h3 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+
+.membersList div h4 {
+    font-weight: normal;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+
+.membersList div p {
+    font-weight: lighter;
+    font-size: 0.8rem;
+    margin: 0 10%;
+}

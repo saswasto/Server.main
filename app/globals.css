@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300&family=Hanken+Grotesk:wght@800&family=Nunito+Sans:wght@400&family=Poppins:wght@800&display=swap');
+
+body {
+    margin: 0;
+    color: #DAD2D8;
+    background-color: rgb(18, 13, 10);
+    overflow-x: hidden;
+    font-family: 'Hanken Grotesk' !important;
+}
+
+.navbar {
+    font-family: 'Nunito Sans';
+    position: fixed;
+    max-height: 3rem;
+    width: 96vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    backdrop-filter: blur(10px);
+    z-index: 2;
+}
+
+.navbar a {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    color: #DAD2D8;
+    text-decoration: none;
+    padding: 1rem 0.5rem;
+    margin: 0;
+}
+
+footer {
+    width: 90vw;
+    margin-top: 10vh;
+    padding: 5vh 5vw;
+    background-color: rgb(20, 20, 40);
+    text-align: center;
+}
+
+footer .panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5vh 0;
+}
+
+footer .panel a {
+    text-decoration: none;
+    text-align: center;
+    width: 20vw;
+}
+
+footer .panel a img {
+    width: 4rem;
+    margin: 0 2vw;
+}
+
+footer a {
+    color: #70C1B3;
+    text-decoration: none;
+}
+
+a {
+    color: #DAD2D8; text-decoration: none; font-weight: 800; transition: .5s;
+    background: linear-gradient(90deg, #DAD2D8 0%, #DAD2D8 50%, rgb(0,150,255) 50%, rgb(0,212,255) 100%);
+    background-size: 200%; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-position: 0% center;
+}
+a:hover {
+    background-position: -100% center;
+}
+
+h1 { margin: 0; font-size: 2rem; font-family: "Poppins"; padding: 2.5vh 0; }
+p { font-size: 1.2rem; }
+
+path {
+    fill: none;
+    stroke: #DAD2D8;
+    stroke-width: 0.02vw;
+}
+
+.center {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: max-content;
+    max-width: 75%;
+    text-align: center;
+}
+
+img {
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}

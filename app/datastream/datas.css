@@ -1,0 +1,46 @@
+.graphHolder {
+    width: 48vw;
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+    .graphHolder {
+        width: 100vw;
+    }
+}
+
+.linkable {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 50%;
+    text-align: center;
+    border-image: linear-gradient(blue, navy) 30;
+    border-width: 0;
+    border-style: solid;
+    min-height: 75vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: .5s;
+}
+
+.linkable:hover {
+    border-width: 1rem;
+    cursor: pointer;
+    animation: cycleGradientBackground 10s ease infinite;
+    background-color: #1c2951;
+}
+
+.linkable a {
+    transition: .5s;
+    font-size: 5rem;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+@media screen and (max-width: 768px) {
+    .linkable a {
+        font-size: 2rem;
+    }
+}
